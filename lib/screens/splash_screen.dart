@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     Timer(const Duration(seconds: 3), () {
       logger.i('[SplashScreen] 3 seconds passed. Navigating to MenuScreen.');
       if (mounted) {
-        Navigator.pushReplacementNamed(context, '/menu');
+        Navigator.pushReplacementNamed(context, '/welcome'); // Transition to WelcomeScreen without back option
       }
     });
   }

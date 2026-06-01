@@ -66,25 +66,154 @@ class AppTextStyles {
 }
 
 class ChemistryData {
-  // 3 Materi Pages Data
+  // 8 Materi Pages Data
   static const List<Map<String, String>> materiList = [
     {
-      'title': '1. Pengertian Asam & Basa',
-      'subtitle': 'Teori Klasik Svante Arrhenius',
-      'content': 'Asam adalah zat yang menghasilkan ion hidrogen (H+) dalam air, sedangkan Basa menghasilkan ion hidroksida (OH-). Teori ini pertama kali dikemukakan oleh Svante Arrhenius pada tahun 1884. Pemahaman ini melandasi konsep keasaman cairan di sekitar kita.',
+      'title': '1. Teori Asam-Basa Arrhenius',
+      'subtitle': 'Konsep Dasar Asam & Basa',
+      'content':
+          'Menurut Svante Arrhenius (1884), asam adalah zat yang menghasilkan ion H⁺ (hidrogen) ketika dilarutkan dalam air, sedangkan basa adalah zat yang menghasilkan ion OH⁻ (hidroksida).\n\n'
+          'Contoh asam Arrhenius:\n'
+          '• HCl → H⁺ + Cl⁻ (asam klorida)\n'
+          '• CH₃COOH → H⁺ + CH₃COO⁻ (asam asetat/cuka)\n\n'
+          'Contoh basa Arrhenius:\n'
+          '• NaOH → Na⁺ + OH⁻ (natrium hidroksida)\n'
+          '• Ca(OH)₂ → Ca²⁺ + 2OH⁻ (kalsium hidroksida)\n\n'
+          'Teori Brønsted-Lowry (1923) memperluas konsep ini: asam adalah donor proton (H⁺) dan basa adalah akseptor proton, sehingga reaksi asam-basa dapat terjadi tanpa pelarut air.',
       'icon': '🧪',
     },
     {
-      'title': '2. Sifat Fisik & Kimia',
-      'subtitle': 'Karakteristik Senyawa',
-      'content': 'Larutan asam memiliki rentang pH di bawah 7, rasanya masam, dan bersifat korosif (dapat merusak logam). Sebaliknya, larutan basa memiliki pH di atas 7, terasa licin seperti sabun (saponifikasi), dan bersifat kaustik (dapat membakar jaringan kulit).',
-      'icon': '⚡',
+      'title': '2. Skala pH & Kekuatan Asam-Basa',
+      'subtitle': 'Mengukur Derajat Keasaman',
+      'content':
+          'pH adalah ukuran konsentrasi ion H⁺ dalam larutan, dengan skala 0–14.\n\n'
+          '• pH < 7 → Asam (semakin kecil, semakin kuat)\n'
+          '• pH = 7 → Netral (air murni)\n'
+          '• pH > 7 → Basa (semakin besar, semakin kuat)\n\n'
+          'Rumus: pH = -log[H⁺]\n\n'
+          'Contoh pH bahan sehari-hari:\n'
+          '• Jus lemon: pH 2–3 (asam kuat)\n'
+          '• Cuka: pH 2,4–3,4\n'
+          '• Air hujan normal: pH 5,6\n'
+          '• Air murni: pH 7\n'
+          '• Sabun: pH 9–10\n'
+          '• Larutan NaOH: pH 13–14 (basa kuat)\n\n'
+          'Asam kuat (HCl, H₂SO₄, HNO₃) terionisasi sempurna, sedangkan asam lemah (CH₃COOH) hanya terionisasi sebagian.',
+      'icon': '📊',
     },
     {
-      'title': '3. Indikator Asam Basa',
-      'subtitle': 'Identifikasi Cepat & Akurat',
-      'content': 'Kertas lakmus adalah indikator asam-basa paling praktis. Larutan asam akan mengubah kertas lakmus biru menjadi merah (merah menandakan bahaya asam). Sebaliknya, larutan basa akan mengubah kertas lakmus merah menjadi biru (blue = basa).',
-      'icon': '⚗️',
+      'title': '3. Indikator Asam-Basa',
+      'subtitle': 'Cara Mendeteksi Sifat Larutan',
+      'content':
+          'Indikator adalah zat yang berubah warna sesuai pH larutan. Ada dua jenis utama:\n\n'
+          '🔬 Indikator Sintetis:\n'
+          '• Kertas lakmus merah → tetap merah (asam), biru (basa)\n'
+          '• Kertas lakmus biru → merah (asam), tetap biru (basa)\n'
+          '• Fenolftalein: tidak berwarna (asam/netral), merah muda (basa, pH > 8,2)\n'
+          '• Metil jingga: merah (asam, pH < 3,1), kuning (basa, pH > 4,4)\n\n'
+          '🌿 Indikator Alami:\n'
+          '• Kunyit: kuning cerah (asam/netral), merah-coklat (basa)\n'
+          '• Kubis ungu: merah (asam), hijau-kuning (basa)\n'
+          '• Bunga sepatu: merah (asam), hijau (basa)\n'
+          '• Bunga telang: biru (netral), merah muda (asam), hijau (basa)\n\n'
+          'Indikator universal dapat menunjukkan nilai pH secara lebih spesifik melalui perubahan warna bertahap.',
+      'icon': '🌈',
+    },
+    {
+      'title': '4. Penerapan Asam-Basa dalam Kehidupan',
+      'subtitle': 'Relevansi di Sekitar Kita',
+      'content':
+          'Konsep asam-basa hadir dalam berbagai aspek kehidupan sehari-hari:\n\n'
+          '🍋 Makanan & Minuman:\n'
+          '• Rasa asam pada buah (sitrat, malat) → asam organik alami\n'
+          '• Fermentasi yogurt & tempe menghasilkan asam laktat\n'
+          '• Soda kue (NaHCO₃) sebagai basa dalam adonan kue\n\n'
+          '🏥 Kesehatan:\n'
+          '• Lambung menggunakan HCl (pH 1,5–3,5) untuk mencerna makanan\n'
+          '• Antasida (Mg(OH)₂) menetralkan kelebihan asam lambung\n'
+          '• Pasta gigi bersifat basa untuk menetralkan asam dari bakteri mulut\n\n'
+          '🌱 Pertanian:\n'
+          '• Tanah asam (pH < 6) dikapur dengan CaCO₃ agar tanaman tumbuh optimal\n'
+          '• Pupuk urea bersifat sedikit asam\n\n'
+          '🏭 Industri:\n'
+          '• H₂SO₄ digunakan dalam baterai aki dan pembuatan pupuk\n'
+          '• NaOH digunakan dalam pembuatan sabun (saponifikasi)',
+      'icon': '🌍',
+    },
+    {
+      'title': '5. Etnokimia: Kearifan Lokal & Asam-Basa',
+      'subtitle': 'Ilmu Kimia dalam Budaya Nusantara',
+      'content':
+          'Etnokimia mengkaji pengetahuan kimia yang terkandung dalam praktik budaya dan kearifan lokal masyarakat.\n\n'
+          '🌿 Penggunaan Bahan Alam sebagai Indikator:\n'
+          '• Masyarakat Jawa menggunakan kunyit untuk menguji keasaman bahan makanan — kunyit berubah merah-coklat saat terkena basa (seperti kapur sirih)\n'
+          '• Bunga telang (Clitoria ternatea) digunakan dalam minuman tradisional; warnanya berubah dari biru ke ungu/merah muda saat ditambah perasan jeruk (asam)\n\n'
+          '🍃 Praktik Tradisional Berbasis Asam-Basa:\n'
+          '• Nginang (menyirih): campuran daun sirih, kapur sirih (Ca(OH)₂), dan pinang menciptakan reaksi basa yang menghasilkan warna merah\n'
+          '• Pembuatan tempe & tape: fermentasi menghasilkan asam organik yang mengawetkan makanan secara alami\n'
+          '• Penggunaan abu kayu (basa) untuk merendam biji-bijian agar lebih mudah dikupas (nixtamalisasi lokal)\n\n'
+          '🏺 Pewarnaan Alami Batik:\n'
+          '• Penggunaan tawas (Al₂(SO₄)₃) sebagai mordan bersifat asam untuk mengikat warna alami pada kain\n'
+          '• Kapur sirih digunakan untuk mengubah warna indigo menjadi lebih cerah',
+      'icon': '🏺',
+    },
+    {
+      'title': '6. Green Chemistry: Kimia Ramah Lingkungan',
+      'subtitle': 'Prinsip Kimia Berkelanjutan',
+      'content':
+          'Green Chemistry (Kimia Hijau) adalah pendekatan yang merancang proses dan produk kimia untuk meminimalkan dampak negatif terhadap lingkungan dan kesehatan.\n\n'
+          '12 Prinsip Green Chemistry (Paul Anastas, 1998) yang relevan dengan asam-basa:\n\n'
+          '♻️ Pencegahan Limbah:\n'
+          '• Lebih baik mencegah terbentuknya limbah daripada mengolahnya\n'
+          '• Contoh: menetralkan limbah asam industri dengan basa sebelum dibuang\n\n'
+          '🌱 Bahan Baku Terbarukan:\n'
+          '• Menggunakan bahan dari sumber alam yang dapat diperbarui\n'
+          '• Contoh: asam sitrat dari fermentasi gula (bukan sintesis petrokimia)\n\n'
+          '⚗️ Katalis Ramah Lingkungan:\n'
+          '• Menggunakan katalis asam/basa alami (enzim) menggantikan asam mineral kuat\n'
+          '• Contoh: enzim lipase menggantikan H₂SO₄ dalam reaksi esterifikasi\n\n'
+          '💧 Pelarut Aman:\n'
+          '• Mengganti pelarut organik berbahaya dengan air atau pelarut bio-based\n'
+          '• Reaksi asam-basa dalam air jauh lebih aman dan ramah lingkungan',
+      'icon': '🌿',
+    },
+    {
+      'title': '7. Penerapan Green Chemistry Lokal',
+      'subtitle': 'Solusi Berkelanjutan dari Bahan Lokal',
+      'content':
+          'Prinsip green chemistry dapat diterapkan menggunakan bahan-bahan lokal yang mudah ditemukan di Indonesia:\n\n'
+          '🍋 Asam dari Sumber Terbarukan:\n'
+          '• Asam jawa (Tamarindus indica) mengandung asam tartrat dan sitrat — pengganti asam sintetis dalam pembersih alami\n'
+          '• Jeruk nipis sebagai pembersih noda karat (asam sitrat bereaksi dengan oksida besi)\n'
+          '• Cuka aren/kelapa sebagai pengawet makanan alami\n\n'
+          '🌾 Basa dari Sumber Alami:\n'
+          '• Abu sekam padi mengandung K₂CO₃ dan Na₂CO₃ — digunakan sebagai sabun tradisional\n'
+          '• Air lindi abu kayu (lye alami) untuk pembuatan sabun tanpa NaOH sintetis\n\n'
+          '🔬 Indikator Alami sebagai Pengganti Sintetis:\n'
+          '• Ekstrak kubis ungu, bunga telang, atau kunyit menggantikan indikator kimia sintetis di laboratorium sekolah\n'
+          '• Lebih aman, murah, dan biodegradable\n\n'
+          '🏭 Pengolahan Limbah Asam-Basa:\n'
+          '• Limbah asam dari industri dapat dinetralkan dengan kapur (CaCO₃) yang murah dan tersedia lokal\n'
+          '• Prinsip: asam + basa → garam + air (reaksi netralisasi)',
+      'icon': '🌾',
+    },
+    {
+      'title': '8. Rangkuman & Koneksi Konsep',
+      'subtitle': 'Integrasi Asam-Basa, Etnokimia & Green Chemistry',
+      'content':
+          'Ketiga tema dalam modul ini saling terhubung membentuk pemahaman kimia yang holistik:\n\n'
+          '🔗 Koneksi Utama:\n'
+          '• Konsep asam-basa (teori, pH, indikator) → fondasi ilmiah\n'
+          '• Etnokimia → bukti bahwa masyarakat lokal telah menerapkan kimia secara intuitif selama berabad-abad\n'
+          '• Green chemistry → arah masa depan: kimia yang bertanggung jawab terhadap lingkungan\n\n'
+          '📌 Poin Kunci:\n'
+          '• Asam: pH < 7, donor H⁺, rasa masam, mengubah lakmus biru → merah\n'
+          '• Basa: pH > 7, donor OH⁻, rasa pahit/licin, mengubah lakmus merah → biru\n'
+          '• Indikator alami (kunyit, bunga telang) = solusi green chemistry lokal\n'
+          '• Kearifan lokal (nginang, pewarnaan batik, fermentasi) = etnokimia berbasis asam-basa\n\n'
+          '💡 Refleksi:\n'
+          'Kimia bukan hanya ilmu di laboratorium — ia hidup dalam tradisi, makanan, dan lingkungan kita. Memahami asam-basa berarti memahami dunia di sekitar kita dengan lebih bijak dan berkelanjutan.',
+      'icon': '🔗',
     },
   ];
 

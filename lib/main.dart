@@ -7,6 +7,8 @@ import 'screens/menu_screen.dart';
 import 'screens/materi_screen.dart';
 import 'screens/latihan_screen.dart';
 import 'screens/evaluasi_screen.dart';
+import 'screens/form_data_diri_screen.dart'; 
+import 'screens/welcome_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,6 +49,8 @@ class ChemistryApp extends StatelessWidget {
           '/materi': (context) => const MateriScreen(),
           '/latihan': (context) => const LatihanScreen(),
           '/evaluasi': (context) => const EvaluasiScreen(),
+          '/form': (context) => const FormDataDiriScreen(),
+          '/welcome': (context) => const WelcomeScreen(),
         },
       ),
     );
